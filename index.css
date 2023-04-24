@@ -1,0 +1,61 @@
+.container {
+padding-left:  20px; 
+padding-right: 100px;
+}
+.navbar {
+    height: 90px
+}
+.logowebsite img{
+float: left;
+border-radius: 50%;
+width:70px;
+height:70px;
+}
+.topnav {
+    float: right;
+}
+.topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.banner {
+    text-align: center;
+    margin-top: 50px;
+}
+.banner img{
+    height: 578px;
+}
+.grid-container > {  
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+}
+.grid-container > div {
+    float: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+.grid-container img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+  }
+.message-us {
+    position: relative;
+    top: 300px;
+    left: 500px;
+}
+.kumpulan-form{
+    float: left;
+}
+.hasil-form{
+    float: right;
+    border:solid black
+}

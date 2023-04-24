@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>My Website</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- //navbar   -->
+        <div class="navbar">
+            <div class="logowebsite">
+                <img src="asset/Hydrangeas.jpg" alt="Logo">
+            </div>
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#news">Our Profile</a>
+                <a href="#contact">Achievement</a>
+                <a href="#about">Message Us</a>
+            </div>
+        </div>
+        <div class="isi">
+            <h1>Hello you! Welcome To Our Website</h1>
+            <p>Ini adalah web percobaan pertama </p>
+            <div class="banner">
+                <img src="asset/anniversary.jpg" alt="banner">
+            </div>
+        </div>
+        <div class="Our-Facilitation" style="margin-top: 50px">
+            <h1>Our Facilitation</h1>
+            <div class="grid-container">
+                <div class="item1">
+                    <img src="asset/44128-nahida-genshin-impact.jpg" alt="Kepala Sekolah">
+                    <p> Kepala Sekolah</p>
+                </div>
+                <div class="item2">
+                    <img src="asset/Sumeru Akademiya 1.jpg" alt="Kelas">
+                    <p>Kelas</p>
+                </div>
+                <div class="item3">
+                    <img src="asset/download.jpg" alt="Perpustakaan">
+                    <p>Perpustakaan</p>
+                </div>
+            </div>
+        </div>
+        <div class="message-us">
+            <h1>Message Us</h1>
+                <div class="kumpulan-form">
+                        <title>Form Validation Example</title>
+                        <script src="validation.js"></script>
+                        <form id="myform" onsubmit="return validateForm()">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <br><br>
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date" required>
+                            <br><br>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <div id="validation-results">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+function validateForm() {
+	var name = document.getElementById("name").value;
+	var date = document.getElementById("date").value;
+
+	if (name == "") {
+		alert("Name field is required.");
+		return false;
+	}
+
+	if (date == "") {
+		alert("Date field is required.");
+		return false;
+	}
+
+	var results = document.getElementById("validation-results");
+	results.innerHTML = "Name: " + name + "<br>Date: " + date;
+	return false;
+}
+
+    </script>
+</body>
+
+</html>
